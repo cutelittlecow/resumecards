@@ -1,0 +1,7 @@
+---
+title: "ResumeCards Hugo, a Markdown based resume generator."
+
+ignoreFiles:
+  - "README.md"
+  - "CHANGELOG.md"
+  - "CNAME"
