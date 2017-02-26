@@ -1,5 +1,3 @@
----
----
 
 /*———————————–———————————–
   Base Settings
@@ -38,61 +36,61 @@ $brown-base: #785447;
 $teal-base: #54C2B8;
 $green-base: #6BAB6E;
 
-$all-colors: ("default": ("base": $default-base,
-                          "sub": lighten($default-base, 10%),
-                          "text": darken($default-base, 50%),
-                          "muted": grayscale($default-base),
-                          "bg": lighten($default-base, 45%),
-                          "heading": lighten($default-base, 40%)),
-              "red": ("base": $red-base,
-                      "sub": lighten($red-base, 20%),
-                      "text": darken($red-base, 50%),
-                      "muted": grayscale($red-base),
-                      "bg": lighten($red-base, 40%),
-                      "heading": lighten($red-base, 30%)),
-              "pink": ("base": $pink-base,
-                       "sub": lighten($pink-base, 20%),
-                       "text": darken($pink-base, 50%),
-                       "muted": grayscale($pink-base),
-                       "bg": lighten($pink-base, 38%),
-                       "heading": lighten($pink-base, 30%)),
-              "brown": ("base": $brown-base,
-                       "sub": lighten($brown-base, 10%),
-                       "text": darken($brown-base, 50%),
-                       "muted": grayscale($brown-base),
-                       "bg": lighten($brown-base, 50%),
-                       "heading": lighten($brown-base, 40%)),
-              "blue": ("base": $blue-base,
-                       "sub": lighten($blue-base, 10%),
-                       "text": darken($blue-base, 50%),
-                       "muted": grayscale($blue-base),
-                       "bg": lighten($blue-base, 35%),
-                       "heading": lighten($blue-base, 25%)),
-              "purple": ("base": $purple-base,
-                          "sub": lighten($purple-base, 20%),
-                          "text": darken($purple-base, 50%),
-                          "muted": grayscale($purple-base),
-                          "bg": lighten($purple-base, 40%),
-                          "heading": lighten($purple-base, 30%)),
-              "teal":  ("base": $teal-base,
-                        "sub": lighten($teal-base, 10%),
-                        "text": darken($teal-base, 50%),
-                        "muted": grayscale($teal-base),
-                        "bg": lighten($teal-base, 40%),
-                        "heading": lighten($teal-base, 30%)),
-              "green": ("base": $green-base,
-                        "sub": lighten($green-base, 10%),
-                        "text": darken($green-base, 50%),
-                        "muted": grayscale($green-base),
-                        "bg": lighten($green-base, 40%),
-                        "heading": lighten($green-base, 30%)));
+$all-colors: ("default":  ( "base": $default-base,
+                            "sub": lighten($default-base, 10%),
+                            "text": darken($default-base, 50%),
+                            "muted": grayscale($default-base),
+                            "bg": lighten($default-base, 45%),
+                            "heading": lighten($default-base, 40%)),
+              "red":      ( "base": $red-base,
+                            "sub": lighten($red-base, 20%),
+                            "text": darken($red-base, 50%),
+                            "muted": grayscale($red-base),
+                            "bg": lighten($red-base, 40%),
+                            "heading": lighten($red-base, 30%)),
+              "pink":     ( "base": $pink-base,
+                            "sub": lighten($pink-base, 20%),
+                            "text": darken($pink-base, 50%),
+                            "muted": grayscale($pink-base),
+                            "bg": lighten($pink-base, 38%),
+                            "heading": lighten($pink-base, 30%)),
+              "brown":    ( "base": $brown-base,
+                            "sub": lighten($brown-base, 10%),
+                            "text": darken($brown-base, 50%),
+                            "muted": grayscale($brown-base),
+                            "bg": lighten($brown-base, 50%),
+                            "heading": lighten($brown-base, 40%)),
+              "blue":     ( "base": $blue-base,
+                            "sub": lighten($blue-base, 10%),
+                            "text": darken($blue-base, 50%),
+                            "muted": grayscale($blue-base),
+                            "bg": lighten($blue-base, 35%),
+                            "heading": lighten($blue-base, 25%)),
+              "purple":   ( "base": $purple-base,
+                            "sub": lighten($purple-base, 20%),
+                            "text": darken($purple-base, 50%),
+                            "muted": grayscale($purple-base),
+                            "bg": lighten($purple-base, 40%),
+                            "heading": lighten($purple-base, 30%)),
+              "teal":     ( "base": $teal-base,
+                            "sub": lighten($teal-base, 10%),
+                            "text": darken($teal-base, 50%),
+                            "muted": grayscale($teal-base),
+                            "bg": lighten($teal-base, 40%),
+                            "heading": lighten($teal-base, 30%)),
+              "green":    ( "base": $green-base,
+                            "sub": lighten($green-base, 10%),
+                            "text": darken($green-base, 50%),
+                            "muted": grayscale($green-base),
+                            "bg": lighten($green-base, 40%),
+                            "heading": lighten($green-base, 30%)));
 
-$theme-color: map-get(map-get($all-colors, "{{ .Site.Data.resume.color }}"), "base");
-$theme-sub: map-get(map-get($all-colors, "{{ .Site.Data.resume.color }}"), "sub");
-$theme-text: map-get(map-get($all-colors, "{{ .Site.Data.resume.color }}"), "text");
-$theme-muted: map-get(map-get($all-colors, "{{ .Site.Data.resume.color }}"), "muted");
-$theme-bg: map-get(map-get($all-colors, "{{ .Site.Data.resume.color }}"), "bg");
-$theme-heading: map-get(map-get($all-colors, "{{ .Site.Data.resume.color }}"), "heading");
+$theme-color: map-get(map-get($all-colors, "default"), "base");
+$theme-sub: map-get(map-get($all-colors, "default"), "sub");
+$theme-text: map-get(map-get($all-colors, "default"), "text");
+$theme-muted: map-get(map-get($all-colors, "default"), "muted");
+$theme-bg: map-get(map-get($all-colors, "default"), "bg");
+$theme-heading: map-get(map-get($all-colors, "default"), "heading");
 
 $color-base: $theme-color;
 $color-sub: $theme-sub;
