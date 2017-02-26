@@ -2,7 +2,7 @@
     <p>
         <i class="fa fa-twitter fa-lg fa-fw"></i> 
         <a href="https://twitter.com/{{ .Site.Data.social.twitter }}" target="_blank">
-            @{{ .Site.Data.social.twitter }}
+            @{{- .Site.Data.social.twitter -}}
         </a>
     </p>
 {{ end }}
@@ -10,15 +10,15 @@
     <p>
         <i class="fa fa-github fa-lg fa-fw"></i> 
         <a href="https://github.com/{{ .Site.Data.social.github }}" target="_blank">
-            @{{ .Site.Data.social.github }}
+            @{{- .Site.Data.social.github -}}
         </a>
     </p>
 {{ end }}
-{{ if .Site.Data.social.linkedin}}
+{{ if .Site.Data.social.linkedin }}
     <p>
         <i class="fa fa-linkedin fa-lg fa-fw"></i> 
         <a href="https://www.linkedin.com/in/{{ .Site.Data.social.linkedin }}" target="_blank">
-            linkedin.com/in/{{ .Site.Data.social.linkedin }}
+            linkedin.com/in/{{- .Site.Data.social.linkedin -}}
         </a>
     </p>
 {{ end }}
@@ -26,7 +26,7 @@
     <p>
         <i class="fa fa-laptop fa-lg fa-fw"></i> 
         <a href="{{ .Site.Data.social.website }}" target="_blank">
-            {{ trim .Site.Data.social.website "https://" }}
+            {{- trim .Site.Data.social.website "https://" -}}
         </a>
     </p>
 {{ end }}
@@ -34,7 +34,7 @@
     <p>
         <i class="fa fa-envelope-o fa-lg fa-fw"></i> 
         <a href="mailto:{{ .Site.Data.social.email }}" target="_blank">
-            {{ .Site.Data.social.email }}
+            {{- .Site.Data.social.email -}}
         </a>
     </p>
 {{ end }}

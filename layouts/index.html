@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      {{ partial "head" . }}
+  </head>
+  <body>
+    {{ partial "components/resume/top" . }}
+    {{ partial "components/resume/middle" . }}
+    {{ partial "components/resume/bottom" . }}
+    {{ partial "components/ribbon" . }}
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/resumecards.js"></script>
+    {{ partial "include/scripts" . }}
+  </body>
+</html>

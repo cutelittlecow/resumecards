@@ -1,0 +1,30 @@
+<div class="col-sm-4">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+        <h3 class="panel-title">{{ .Type }}</h3>
+        </div>
+        <div class="panel-body">
+        {{ if .Params.heading }}
+            <h4>
+            {{ .Params.heading }}
+            </h4>
+        {{ end }}
+        {{ if .Params.subheading }}
+            <p class="resume-subheading">
+            {{ .Params.subheading }}
+            </p>
+        {{ end }}
+        {{ if .Params.duration }}
+            <p class="resume-duration">
+            {{ .Params.duration }}
+            </p>
+        {{ end }}
+        {{ if .Params.location }}
+            <p class="resume-location">
+            {{ .Params.location }}
+            </p>
+        {{ end }}
+        {{ .Content }}
+        </div>
+    </div>
+</div>
