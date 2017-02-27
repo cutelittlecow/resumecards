@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ResumeCards Hugo, a Markdown based resume generator.</title>
-    <link>/index.xml</link>
+    <link>/resumecards/index.xml</link>
     <description>Recent content on ResumeCards Hugo, a Markdown based resume generator.</description>
     <generator>Hugo -- gohugo.io</generator>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/resumecards/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title></title>
-      <link>/post/2015-01-01-card-1/</link>
+      <link>/resumecards/post/2015-01-01-card-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-01-01-card-1/</guid>
+      <guid>/resumecards/post/2015-01-01-card-1/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.actcat.co.jp/&#34; target=&#34;_blank&#34;&gt;Actcat&lt;/a&gt; is making a code reviewing service called &lt;a href=&#34;https://sideci.com/&#34; target=&#34;_blank&#34;&gt;SideCI&lt;/a&gt;, and supporting engineers to write clean and maintainable code. I&amp;rsquo;m currently working as a product designer, and work full-time from my place in Canada.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title></title>
-      <link>/post/2015-01-02-card-2/</link>
+      <link>/resumecards/post/2015-01-02-card-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-01-02-card-2/</guid>
+      <guid>/resumecards/post/2015-01-02-card-2/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.istuary.com/&#34; target=&#34;_blank&#34;&gt;Istuary Innovation Group&lt;/a&gt; is Canada’s largest technology incubation platform. I was in the OPI team which makes HR systems for Istuary, and I worked on front-end design (Sketch) and coding (HTML/CSS).&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title></title>
-      <link>/post/2015-01-03-card-3/</link>
+      <link>/resumecards/post/2015-01-03-card-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-01-03-card-3/</guid>
+      <guid>/resumecards/post/2015-01-03-card-3/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.bizreach.jp/&#34; target=&#34;_blank&#34;&gt;BizReach&lt;/a&gt; is Japan&amp;rsquo;s top job site exclusive to business executives. I worked on front-end design and coding. My most recent project was &lt;a href=&#34;https://woman.bizreach.jp/&#34; target=&#34;_blank&#34;&gt;Bizreach Woman&lt;/a&gt;, a job site specifically for female business executives in Japan.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title></title>
-      <link>/post/2015-01-04-card-4/</link>
+      <link>/resumecards/post/2015-01-04-card-4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-01-04-card-4/</guid>
+      <guid>/resumecards/post/2015-01-04-card-4/</guid>
       <description>&lt;p&gt;Schoo is Japan&amp;rsquo;s leading online learning platform. I designed and taught a bi-weekly class on HTML/CSS. On every lecture, I did &lt;a href=&#34;https://schoo.jp/teacher/336&#34; target=&#34;_blank&#34;&gt;live coding&lt;/a&gt; and there were ~500 live viewers.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title></title>
-      <link>/post/2015-01-05-card-5/</link>
+      <link>/resumecards/post/2015-01-05-card-5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-01-05-card-5/</guid>
+      <guid>/resumecards/post/2015-01-05-card-5/</guid>
       <description>&lt;p&gt;Here are some of my open source projects:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -66,10 +66,10 @@
     
     <item>
       <title></title>
-      <link>/post/2015-01-06-card-6/</link>
+      <link>/resumecards/post/2015-01-06-card-6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-01-06-card-6/</guid>
+      <guid>/resumecards/post/2015-01-06-card-6/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;I&amp;rsquo;m a mentor at &lt;a href=&#34;http://ladieslearningcode.com/&#34; target=&#34;_blank&#34;&gt;Ladies Learning Code&lt;/a&gt;. I teach HTML/CSS to beginning women developers.&lt;/li&gt;
 &lt;li&gt;I spoke at  Code&amp;amp;Coffee, a local coding meetup. The video/slides can be &lt;a href=&#34;https://medium.com/@ellekasai/how-to-market-micro-open-source-projects-703f03c71061&#34; target=&#34;_blank&#34;&gt;found here&lt;/a&gt;.&lt;/li&gt;
@@ -81,10 +81,10 @@
     
     <item>
       <title></title>
-      <link>/post/2015-01-07-card-7/</link>
+      <link>/resumecards/post/2015-01-07-card-7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-01-07-card-7/</guid>
+      <guid>/resumecards/post/2015-01-07-card-7/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;At Startup Weekend Vancouver 2014, I joined My Green Space team as a UI designer and won &lt;a href=&#34;https://medium.com/@mygreenspace/my-green-space-wins-2nd-place-in-startup-weekend-vancouver-2014-b76be7550f28&#34; target=&#34;_blank&#34;&gt;2nd place&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;At CODE 2015 hackathon, I joined Padawans team as a UI designer. Selected as one of the &lt;a href=&#34;https://www.canadianopendataexperience.ca/top15/&#34; target=&#34;_blank&#34;&gt;top 15 teams&lt;/a&gt; among 1300+ participants.&lt;/li&gt;
@@ -94,10 +94,10 @@
     
     <item>
       <title></title>
-      <link>/post/2015-01-08-card-8/</link>
+      <link>/resumecards/post/2015-01-08-card-8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-01-08-card-8/</guid>
+      <guid>/resumecards/post/2015-01-08-card-8/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;HTML/CSS&lt;/li&gt;
 &lt;li&gt;Sass&lt;/li&gt;
@@ -115,10 +115,10 @@
     
     <item>
       <title></title>
-      <link>/post/2015-01-09-card-9/</link>
+      <link>/resumecards/post/2015-01-09-card-9/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-01-09-card-9/</guid>
+      <guid>/resumecards/post/2015-01-09-card-9/</guid>
       <description>&lt;p&gt;I studied Marketing and Japanese culture (tea ceremony, kimono, Japanese dancing) in college.&lt;/p&gt;
 </description>
     </item>
