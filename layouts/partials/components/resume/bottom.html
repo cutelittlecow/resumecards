@@ -6,33 +6,30 @@
         <h2>How It Works</h2>
         <p>Here's the code behind the demo. First, the main heading is defined by <code>data/resume.yml</code>. You can specify the theme color here too.</p>
         <pre>
-            photo: "http://url/to/photo.jpg"
-            name: "Elle Kasai"
-            copy: "UI/UX Designer from Japan..."
-            color: default
-        </pre>
+photo: "http://url/to/photo.jpg"
+name: "Elle Kasai"
+copy: "UI/UX Designer from Japan..."
+color: default</pre>
         <p>Next, the contact info section is defined by <code>_includes/nav.html</code>. You can use <a href="http://fontawesome.io/" target="_blank">Font Awesome icons</a>.</p>
         <pre>
-            &lt;p&gt;
-            &lt;i class="fa fa-twitter fa-lg fa-fw"&gt;&lt;/i&gt;
-            &lt;a href="https://twitter.com/ellekasai/"&gt;@ellekasai&lt;/a&gt;
-            &lt;/p&gt;
+&lt;p&gt;
+&lt;i class="fa fa-twitter fa-lg fa-fw"&gt;&lt;/i&gt;
+&lt;a href="https://twitter.com/ellekasai/"&gt;@ellekasai&lt;/a&gt;
+&lt;/p&gt;
 
-            ...
-        </pre>
+...</pre>
         <p>Finally, the cards are defined by markdown files under the <code>_posts</code> directory. It uses <a href="http://jekyllrb.com/docs/frontmatter/" target="_blank">YAML front matter</a>.</p>
         <pre>
-            ---
-            type: "Work Experience"
-            heading: "Bizreach"
-            subheading: "Junior Product Designer"
-            duration: "October 2013 – September 2014 (1 year)"
-            location: "Tokyo, Japan"
-            ---
+---
+type: "Work Experience"
+heading: "Bizreach"
+subheading: "Junior Product Designer"
+duration: "October 2013 – September 2014 (1 year)"
+location: "Tokyo, Japan"
+---
 
-            [BizReach](https://www.bizreach.jp/) is Japan's top job site exclusive to business executives.
-            ...
-        </pre>
+[BizReach](https://www.bizreach.jp/) is Japan's top job site exclusive to business executives.
+...</pre>
         <p>These files are put together by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>, which is supported by <a href="https://pages.github.com/" target="_blanks">GitHub Pages</a>.</p>
         <p>Also, card heights are fixed by CSS. So, if all the texts fit within each card when viewed on the web, they'd also fit within each card when clicking the "Saved as PDF" button.</p>
         <p>You can read more detailed documentation on GitHub.</p>
