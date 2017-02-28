@@ -1,41 +1,33 @@
-Unfortunately, this project is **no longer maintained**.
-
-I now have other priorities in my life and no longer have time to update this library. Email me at elle.kasai@gmail.com if you'd like to reach me.
-
-# :briefcase: ResumeCards :briefcase:
+# 💼 ResumeCards 💼
 
 ResumeCards is a Markdown based resume generator. It looks great on mobile/desktop and can be saved as PDF.
 
-## :briefcase: Live Demo :briefcase:
+## 💼 Live Demo 💼
 
-### [View Demo and Documentation](http://ellekasai.github.io/resumecards)
+### [View Demo and Documentation](http://cutelittlecow.github.io/resumecards)
 
-![](http://cl.ly/image/3O342N0b0y1h/sample_default.png)
+![](https://cl.ly/image/3O342N0b0y1h/sample_default.png)
 
 You can save it as PDF too:
 
-![](http://cl.ly/image/091w0b0M2S3G/resume_print_preview.png)
+![](https://cl.ly/image/091w0b0M2S3G/resume_print_preview.png)
 
-## :briefcase: Installation :briefcase:
+## 💼 Installation 💼
 
-**Note:** ResumeCards uses Jekyll. Please read [Jekyll's documentation](http://jekyllrb.com/) if you get stuck.
+**Note:** This port of ResumeCards uses Hugo. Please read [Hugo's documentation](http://gohugo.io/) if you get stuck.
 
-[Fork this repo](http://github.com/ellekasai/resumecard/fork), clone it, and then run:
-
-```
-bundle install
-```
-
-...which installs `github-pages` gem. After that, run the server:
+Fork this repo, clone it, and then run:
 
 ```
-jekyll serve --watch
+hugo server
 ```
+
+Use build.bat currently on windows (no multiplatform tools currently, sorry) to compile and compress resumecards.scss if you make changes.
 ### Warning
 
-* Once the server is started, you must go to [http://localhost:4000/resumecards/](http://localhost:4000/resumecards/), since `baseurl` is set as `"/resumecards"` initially. To use  http://localhost:4000/, change `baseurl` in `_config.yml` to `""` .
+* Once the server is started, you must go to [http://localhost:1313/resumecards/](http://localhost:1313/resumecards/), since `baseURL` is set as `"/resumecards/"` initially. To use  http://localhost:1313/, change `baseURL` in `config.yml` to `""` .
 
-## :briefcase: Usage :briefcase:
+## 💼 Usage 💼
 
 ### Editing Your Resume
 
@@ -66,17 +58,26 @@ heading: "Bizreach"
 
 You **should** change these files before deploying:
 
-* `_config.yml`: You must change `baseurl`and `url`.
-  * Make sure to restart the server after you update `_config.yml`.
-* `_data/resume.yml`: You must change `photo`, `name` and `url`. Also, you must set `demo` to `false` to hide everything but your resume.
+* `config.yml`: You must change `baseurl` and `url`.
+  * Make sure to restart the server after you update `config.yml`.
+* `data/resume.yml`: You must change `photo`, `name` and `url`. Also, you must set `demo` to `false` to hide everything but your resume.
 * `CNAME`: Change this to host ResumeCards on a custom domain.
 * `README.md`: Write your own README!
-* `_includes/script.html`: Extra stuff before the `</body>` tag. Change or remove the default Google Analytics code.
-* `_includes/nav.html`: Modify or remove your contact links.
+* `layouts/partials/include/scripts.html`: Extra stuff before the `</body>` tag. Change or remove the default Google Analytics code.
+* `layouts/partials/include/social.html`: Modify or remove your contact links.
 
 ### Customize the Theme
 
-To customize the color theme, edit the `color` section of `_data/resume.yml`.
+~~To customize the color theme, edit the `color` section of `data/resume.yml`.~~  
+**Note:** One of the pitfalls of using Hugo vs Jekyll is the fact that Hugo doesnt support Yaml front matter in Sass. This unfortunately currently makes the `color` section of `data/resume.yml` not work as intended. To change colors currently, you'll need to edit the following, changing default to whatever color you choose:
+```
+$theme-color: map-get(map-get($all-colors, "default"), "base");
+$theme-sub: map-get(map-get($all-colors, "default"), "sub");
+$theme-text: map-get(map-get($all-colors, "default"), "text");
+$theme-muted: map-get(map-get($all-colors, "default"), "muted");
+$theme-bg: map-get(map-get($all-colors, "default"), "bg");
+$theme-heading: map-get(map-get($all-colors, "default"), "heading");
+```
 
 #### Red
 ![](http://cl.ly/image/0Q442g393E0O/sample_red.png)
@@ -99,7 +100,7 @@ To customize the color theme, edit the `color` section of `_data/resume.yml`.
 #### Green
 ![](http://cl.ly/image/031u3a070V3f/sample_green.png)
 
-## :briefcase: Author & License :briefcase:
+## 💼 Author & License 💼
 
 Elle Kasai
 
@@ -108,8 +109,11 @@ Elle Kasai
 
 [MIT License](http://ellekasai.mit-license.org).
 
-## :briefcase: Special Thanks :briefcase:
+## 💼 Special Thanks 💼
+* [Shu Uesugi](https://github.com/chibicode) - for the guidance on this project.
+* [Samantha Davis](https://github.com/cutelittlecow) - Hugo port and maintaining.
 
-* [Shu Uesugi](http://github.com/chibicode) - for the guidance on this project.
-
+## 📋 Changes to Come? 📋
+* Some way to use yaml front matter in our sass...maybe injection?
+* Multiplatform build tools for sass watch/build, and site publication.
 
