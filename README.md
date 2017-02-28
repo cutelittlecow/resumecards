@@ -69,7 +69,7 @@ You **should** change these files before deploying:
 ### Customize the Theme
 
 ~~To customize the color theme, edit the `color` section of `data/resume.yml`.~~  
-**Note:** One of the pitfalls of using Hugo vs Jekyll is the fact that Hugo doesnt support Yaml front matter in Sass. This unfortunately currently makes the `color` section of `data/resume.yml` not work as intended. To change colors currently, you'll need to edit the following, changing default to whatever color you choose:
+**Note:** One of the pitfalls of using Hugo vs Jekyll is the fact that Hugo doesnt support Yaml front matter in Sass. This unfortunately  makes the `color` section of `data/resume.yml` not work as intended. To change colors currently, you'll need to edit the following, changing default to whatever color you choose:
 ```
 $theme-color: map-get(map-get($all-colors, "default"), "base");
 $theme-sub: map-get(map-get($all-colors, "default"), "sub");
