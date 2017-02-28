@@ -31,7 +31,7 @@ Use build.bat currently on windows (no multiplatform tools currently, sorry) to 
 
 ### Editing Your Resume
 
-Edit `_posts/card-[1-9].md` like this:
+Edit `content/post/card-[1-9].md` like this:
 
 ```markdown
 ---
