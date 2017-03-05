@@ -111,7 +111,7 @@ Elle Kasai
 
 ## 💼 Special Thanks 💼
 * [Shu Uesugi](https://github.com/chibicode) - for the guidance on this project.
-* [Samantha Davis](https://github.com/cutelittlecow) - Hugo port and maintaining.
+* [Samantha Bartlett](https://github.com/cutelittlecow) - Hugo port and maintaining.
 
 ## 📋 Changes to Come? 📋
 * Some way to use yaml front matter in our sass...maybe injection?
