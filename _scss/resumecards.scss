@@ -362,6 +362,10 @@ a {
   ul > li + li {
     margin-top: $space-md;
   }
+
+  blockquote {
+    font-size: inherit;
+  }
 }
 
 .resume-explanations-btn {
