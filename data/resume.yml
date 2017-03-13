@@ -21,4 +21,4 @@ copy: "I'm a product designer based in BC, Canada, and I'm currently working for
 color: "default"
 
 # list style type property based on https://www.w3.org/wiki/CSS/Properties/list-style-type
-list-style: "square"
+list-style: "disc"
