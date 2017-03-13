@@ -16,13 +16,26 @@ You can save it as PDF too:
 
 **Note:** This port of ResumeCards uses Hugo. Please read [Hugo's documentation](http://gohugo.io/) if you get stuck.
 
-Fork this repo, clone it, and then run:
+
+Fork this repo, clone it, open up a terminal, navigate to the folder, and then run:
 
 ```
 hugo server
 ```
 
-Use build.bat currently on windows (no multiplatform tools currently, sorry) to compile and compress resumecards.scss if you make changes.
+If you want to take advantage of the pre-built build systems in place for this project, then you'll want to install Ruby.
+Once that's finished, go ahead and open up another terminal, navigate to the folder, and install the Ruby bundle using:
+
+```
+bundle install
+```
+
+This only needs to be done once, and afterwards you can omit that command and simply call the build/watch script by using:
+
+```
+ruby build.rb
+```
+
 ### Warning
 
 * Once the server is started, you must go to [http://localhost:1313/resumecards/](http://localhost:1313/resumecards/), since `baseURL` is set as `"/resumecards/"` initially. To use  http://localhost:1313/, change `baseURL` in `config.yml` to `""` .
@@ -36,6 +49,7 @@ Edit `content/post/card-[1-9].md` like this:
 ```markdown
 ---
 type: "Work Experience"
+icon: "building"
 heading: "Bizreach"
 subheading: "Junior Product Designer"
 duration: "October 2013 – September 2014 (1 year)"
@@ -61,23 +75,15 @@ You **should** change these files before deploying:
 * `config.yml`: You must change `baseurl` and `url`.
   * Make sure to restart the server after you update `config.yml`.
 * `data/resume.yml`: You must change `photo`, `name` and `url`. Also, you must set `demo` to `false` to hide everything but your resume.
+* `data/social.yml`: Change this to update your social media metadata.
 * `CNAME`: Change this to host ResumeCards on a custom domain.
 * `README.md`: Write your own README!
 * `layouts/partials/include/scripts.html`: Extra stuff before the `</body>` tag. Change or remove the default Google Analytics code.
-* `layouts/partials/include/social.html`: Modify or remove your contact links.
+* `layouts/partials/include/social.html`: Add or remove contact links completely from the template
 
 ### Customize the Theme
 
-~~To customize the color theme, edit the `color` section of `data/resume.yml`.~~  
-**Note:** One of the pitfalls of using Hugo vs Jekyll is the fact that Hugo doesnt support Yaml front matter in Sass. This unfortunately  makes the `color` section of `data/resume.yml` not work as intended. To change colors currently, you'll need to edit the following, changing default to whatever color you choose:
-```
-$theme-color: map-get(map-get($all-colors, "default"), "base");
-$theme-sub: map-get(map-get($all-colors, "default"), "sub");
-$theme-text: map-get(map-get($all-colors, "default"), "text");
-$theme-muted: map-get(map-get($all-colors, "default"), "muted");
-$theme-bg: map-get(map-get($all-colors, "default"), "bg");
-$theme-heading: map-get(map-get($all-colors, "default"), "heading");
-```
+To customize the color theme, edit the `color` section of `data/resume.yml`.
 
 #### Red
 ![](http://cl.ly/image/0Q442g393E0O/sample_red.png)
