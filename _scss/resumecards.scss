@@ -1,4 +1,6 @@
 
+@import "yaml-front-matter";
+
 /*———————————–———————————–
   Base Settings
 ———————————–———————————–*/
@@ -85,12 +87,12 @@ $all-colors: ("default":  ( "base": $default-base,
                             "bg": lighten($green-base, 40%),
                             "heading": lighten($green-base, 30%)));
 
-$theme-color: map-get(map-get($all-colors, "default"), "base");
-$theme-sub: map-get(map-get($all-colors, "default"), "sub");
-$theme-text: map-get(map-get($all-colors, "default"), "text");
-$theme-muted: map-get(map-get($all-colors, "default"), "muted");
-$theme-bg: map-get(map-get($all-colors, "default"), "bg");
-$theme-heading: map-get(map-get($all-colors, "default"), "heading");
+$theme-color: map-get(map-get($all-colors, $resume-color), "base");
+$theme-sub: map-get(map-get($all-colors, $resume-color), "sub");
+$theme-text: map-get(map-get($all-colors, $resume-color), "text");
+$theme-muted: map-get(map-get($all-colors, $resume-color), "muted");
+$theme-bg: map-get(map-get($all-colors, $resume-color), "bg");
+$theme-heading: map-get(map-get($all-colors, $resume-color), "heading");
 
 $color-base: $theme-color;
 $color-sub: $theme-sub;
@@ -176,6 +178,7 @@ h4 {
 
 ul {
   padding-left: $space-md;
+  list-style-type: $list-style;
 }
 
 pre {
@@ -231,6 +234,10 @@ a {
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
+  i {
+    font-size: 1.6rem;
+    margin-right: -2px;
+  }
 }
 
 .panel-body {
@@ -432,7 +439,7 @@ script + p {
 }
 
 .resume-subheading {
-  margin: $space-xs 0 $space-sm;
+  margin: 0;
   color: $color-sub;
   font-family: "Quando", sans-serif;
   font-size: $font-size-base;
@@ -444,14 +451,13 @@ script + p {
   }
 }
 
-.resume-duration {
-  margin-bottom: 0;
-}
-
-.resume-duration,
-.resume-location {
+.resume-info {
   color: $color-muted;
   line-height: 1.4;
+  margin-bottom: 0;
+  &:last-child {
+      margin-bottom: $space-sm;
+  }
 
   @each $color-name in $color-list {
     .theme-#{$color-name} & {
