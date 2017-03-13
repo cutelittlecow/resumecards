@@ -1,5 +1,6 @@
 ---
 type: "Work Experience"
+icon: ""
 heading: "Actcat"
 subheading: "Product Designer"
 duration: "September 2016 – Present"

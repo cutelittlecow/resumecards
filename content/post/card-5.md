@@ -1,5 +1,10 @@
 ---
 type: "Open Source"
+icon: ""
+heading: ""
+subheading: ""
+duration: ""
+location: ""
 ---
 
 Here are some of my open source projects:

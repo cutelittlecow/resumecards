@@ -1,5 +1,6 @@
 ---
 type: "Education"
+icon: ""
 heading: "Gakushuin Women's College"
 subheading: "BA, Marketing"
 duration: "2008 – 2012"

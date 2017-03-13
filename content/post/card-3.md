@@ -1,5 +1,6 @@
 ---
 type: "Work Experience"
+icon: ""
 heading: "Bizreach"
 subheading: "Junior Product Designer"
 duration: "October 2013 – September 2014 (1 year)"

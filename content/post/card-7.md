@@ -1,5 +1,10 @@
 ---
 type: "Honors & Awards"
+icon: ""
+heading: ""
+subheading: ""
+duration: ""
+location: ""
 ---
 
 * At Startup Weekend Vancouver 2014, I joined My Green Space team as a UI designer and won <a href="https://medium.com/@mygreenspace/my-green-space-wins-2nd-place-in-startup-weekend-vancouver-2014-b76be7550f28" target="_blank">2nd place</a>.

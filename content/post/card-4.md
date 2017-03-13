@@ -1,5 +1,6 @@
 ---
 type: "Work Experience"
+icon: ""
 heading: "Schoo"
 subheading: "HTML/CSS Lecturer"
 duration: "March 2014 – April 2014 (2 months)"

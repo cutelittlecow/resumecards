@@ -1,5 +1,10 @@
 ---
 type: "Skills"
+icon: ""
+heading: ""
+subheading: ""
+duration: ""
+location: ""
 ---
 
 * HTML/CSS

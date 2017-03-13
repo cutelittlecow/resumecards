@@ -1,5 +1,6 @@
 ---
 type: "Work Experience"
+icon: ""
 heading: "Istuary Innovation Group"
 subheading: "UI Developer/Designer"
 duration: "August 2015 – August 2016"

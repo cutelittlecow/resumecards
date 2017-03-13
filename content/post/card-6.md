@@ -1,5 +1,10 @@
 ---
 type: "Giving Back"
+icon: ""
+heading: ""
+subheading: ""
+duration: ""
+location: ""
 ---
 
 * I'm a mentor at <a href="http://ladieslearningcode.com/" target="_blank">Ladies Learning Code</a>. I teach HTML/CSS to beginning women developers.
