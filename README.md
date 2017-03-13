@@ -112,9 +112,3 @@ Elle Kasai
 ## 💼 Special Thanks 💼
 * [Shu Uesugi](https://github.com/chibicode) - for the guidance on this project.
 * [Samantha Bartlett](https://github.com/cutelittlecow) - Hugo port and maintaining.
-
-## 📋 Changes to Come? 📋
-* Some way to use yaml front matter in our sass...maybe injection?
-* Multiplatform build tools for sass watch/build, and site publication.
-* Fixing color front matter in sass
-* Adding list style type front matter in sass
