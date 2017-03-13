@@ -1,8 +1,8 @@
 # IMPORTANT: Set this to false.
 demo: true
 
-# Theme customization is done on this file instead of _config.yml so that
-# you don't have to restart Jekyll to see changes.
+# Theme customization is done on this file instead of config.yml so that
+# you don't have to restart Hugo to see changes.
 
 photo: "https://avatars0.githubusercontent.com/u/2410692?v=2&s=150"
 name: "Elle Kasai"
@@ -18,4 +18,7 @@ copy: "I'm a product designer based in BC, Canada, and I'm currently working for
 # - purple
 # - teal
 # - green
-color: default
+color: "default"
+
+# list style type property based on https://www.w3.org/wiki/CSS/Properties/list-style-type
+list-style: "square"
