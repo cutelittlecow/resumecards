@@ -4,9 +4,9 @@ demo: true
 # Theme customization is done on this file instead of config.yml so that
 # you don't have to restart Hugo to see changes.
 
-photo: "https://avatars0.githubusercontent.com/u/2410692?v=2&s=150"
-name: "Elle Kasai"
-copy: "I'm a product designer based in BC, Canada, and I'm currently working for Actcat which is developing a code reviewing service called SideCI (https://sideci.com/)."
+photo: "https://lh3.googleusercontent.com/-k8FK9wOMuFU/WL3GxntqnVI/AAAAAAAAAB4/YkLV7RbtHtAf1gVf93uX76lBFOi8TRoZgCEw/w140-h140-p/IMG_20161212_140757-2.jpg"
+name: "Samantha Bartlett"
+copy: "I'm a part-time freelance software engineer based in the eastern United States."
 
 # Color scheme based on http://www.materialui.co/colors.
 # Possible values:
@@ -21,4 +21,4 @@ copy: "I'm a product designer based in BC, Canada, and I'm currently working for
 color: "default"
 
 # list style type property based on https://www.w3.org/wiki/CSS/Properties/list-style-type
-list-style: "disc"
+list-style: "square"

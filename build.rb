@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 require 'yaml'
-require 'sass'
-require 'sass/plugin'
+require 'sassc'
 require 'filewatcher'
 require 'thread'
 
@@ -21,13 +20,13 @@ class FrontMatter
     end
 
     def to_sass(data)
-        string = '$' + @var_name + ': ' + add_quotes(data) + ';'
+        string = '$' << @var_name << ': ' << add_quotes(data) << ';'
         return string
     end
 
     def add_quotes(string)
         if (@use_quotes)
-            return '"' + string + '"'
+            return '"' << string << '"'
         else
             return string
         end
@@ -74,8 +73,8 @@ class Watcher
 end
 
 class Injector < Watcher
-    assign ['data', './data/'], ['sass', './_scss/']
-    @@yaml = Injector.path('data') + 'resume.yml'
+    assign ['sass', '_scss']
+    @@yaml = File.join('data', 'resume.yml')
 
     def initialize(front_matter)
         @@front_matter = front_matter
@@ -87,38 +86,58 @@ class Injector < Watcher
     end
 
     def inject()
-        inject_path = Injector.path('sass') + '_yaml-front-matter.scss'
+        inject_path = File.join(Builder.path('sass'), '_yaml-front-matter.scss')
 
         File.open(inject_path, 'w') do |file|
             @@front_matter.each do |fm|
-                puts fm.to_sass(@@data[fm.yaml_name])
                 file.puts fm.to_sass(@@data[fm.yaml_name])
             end
         end
+        puts 'ー Injected up-to-date YAML front matter. ー'
     end
 
     def watch()
         FileWatcher.new(@@yaml).watch do |filename|
             read
             inject
-            puts "Updated #{filename}"
+            puts 'Updated: ' << filename
         end
     end
 end
 
 class Builder < Watcher
-    assign ['sass', './_scss/'], ['css', './static/stylesheets/']
+    assign ['sass', '_scss'], ['css', './static/stylesheets']
 
     def initialize()
-        Sass::Plugin.options[:style] = :compressed
-        Sass::Plugin.options[:sourcemap] = :none
-        Sass::Plugin.options[:cache] = false
-        Sass::Plugin.options[:css_location] = Builder.path('css')
-        Sass::Plugin.options[:template_location] = Builder.path('sass')
+        build
+    end
+
+    def build()
+        # I'm not implementing sourcemap functionality. 
+        # If you're interested in this, feel free to implement and make a pull request.
+        begin
+            engine = SassC::Engine.new(
+                File.read(File.join(Builder.path('sass'), 'resumecards.scss')), {
+                    style: :compressed,
+                    load_paths: [Builder.path('sass')]
+            }).render
+        rescue SassC::SyntaxError => e
+            puts 'Failed to rebuild styles!'
+            puts e.message
+            return
+        end
+
+        puts 'Rebuilding styles!'
+        File.open(File.join(Builder.path('css'), 'resumecards.css'), 'w') do |file|
+            file.write(engine)
+        end
     end
 
     def watch()
-        Sass::Plugin.watch
+        FileWatcher.new([Builder.path('sass')]).watch do |filename|
+            puts 'Change to: ' << filename
+            build
+        end
     end
 end
 

@@ -1,9 +1,13 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    ffi (1.11.1-x64-mingw32)
     filewatcher (0.5.4)
       trollop (~> 2.0)
-    sass (3.4.23)
+    rake (12.3.2)
+    sassc (2.0.1)
+      ffi (~> 1.9)
+      rake
     trollop (2.1.2)
 
 PLATFORMS
@@ -11,7 +15,7 @@ PLATFORMS
 
 DEPENDENCIES
   filewatcher
-  sass
+  sassc
 
 BUNDLED WITH
-   1.14.6
+   1.17.3
