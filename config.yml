@@ -1,4 +1,4 @@
-baseURL: "" # The subpath of your site. Use "" if you're hosting a blog at the root level.
+baseURL: "/resumecards" # The subpath of your site. Use "" if you're hosting a blog at the root level.
 title: "ResumeCards, a Markdown based resume generator."
 
 # Twitter Params
