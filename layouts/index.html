@@ -8,9 +8,9 @@
     {{ partial "components/resume/middle" . }}
     {{ partial "components/resume/bottom" . }}
     {{ partial "components/ribbon" . }}
-    <script src="{{ .Site.Data.baseURL }}/javascripts/jquery.min.js"></script>
-    <script src="{{ .Site.Data.baseURL }}/javascripts/bootstrap.min.js"></script>
-    <script src="{{ .Site.Data.baseURL }}/javascripts/resumecards.js"></script>
+    <script src="{{ .Site.BaseURL }}/javascripts/jquery.min.js"></script>
+    <script src="{{ .Site.BaseURL }}/javascripts/bootstrap.min.js"></script>
+    <script src="{{ .Site.BaseURL }}/javascripts/resumecards.js"></script>
     {{ if .Site.Data.enableAnalytics }}
       {{ template "_internal/google_analytics.html" . }}
     {{ end }}
