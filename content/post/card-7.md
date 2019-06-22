@@ -1,11 +1,9 @@
 ---
-type: "Honors & Awards"
-icon: ""
-heading: ""
-subheading: ""
-duration: ""
-location: ""
+type: "Open Source"
+icon: "code-branch"
 ---
 
-* At Startup Weekend Vancouver 2014, I joined My Green Space team as a UI designer and won <a href="https://medium.com/@mygreenspace/my-green-space-wins-2nd-place-in-startup-weekend-vancouver-2014-b76be7550f28" target="_blank">2nd place</a>.
-* At CODE 2015 hackathon, I joined Padawans team as a UI designer. Selected as one of the <a href="https://www.canadianopendataexperience.ca/top15/" target="_blank">top 15 teams</a> among 1300+ participants.
+Below are some of my active open-source projects:
+
+* [ResumeCards](https://sammynilla.github.io/resumecards/): Hugo-based port of the Jekyll version developed by [<i style="font-size: 0.9em;" class="fas fa-at"></i>ellekasai](http://ellekasai.github.io/resumecards/).
+* [TwemojiTray](https://github.com/sammynilla/TwemojiTray): Twitter emoji right from your system tray.

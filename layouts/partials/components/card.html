@@ -1,37 +1,39 @@
-<div class="col-sm-4">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">
-                {{ if .Params.icon }}
-                    <i class="fa fa-{{ .Params.icon }} fa-lg fa-fw" aria-hidden="true"></i>
-                {{ end }}
-                {{- .Type -}}
-            </h3>
-        </div>
-        <div class="panel-body">
-        {{ if .Params.heading }}
-            <h4>
-                {{- .Params.heading -}}
-            </h4>
-        {{ end }}
-        {{ if .Params.subheading }}
-            <p class="resume-subheading">
-                {{- .Params.subheading -}}
-            </p>
-        {{ end }}
-        <div>
-            {{ if .Params.duration }}
-                <p class="resume-info">
-                    {{- .Params.duration -}}
-                </p>
-            {{ end }}
-            {{ if .Params.location }}
-                <p class="resume-info">
-                    {{- .Params.location -}}
-                </p>
-            {{ end }}
-        </div>
-        {{- .Content -}}
-        </div>
+<div class="col-sm-6 col-md-4">
+  <div class="panel">
+    <div class="panel-heading">
+      {{ if .Params.icon }}
+        <i class="fas fa-{{ .Params.icon }} fa-lg fa-fw" aria-hidden="true"></i>
+      {{ end }}
+      <h3 class="panel-title">
+        {{ .Params.type }}
+      </h3>
     </div>
+    <div class="panel-body">
+      {{ if .Params.heading }}
+        <h4>
+          {{ .Params.heading }}
+        </h4>
+      {{ end }}
+      {{ if .Params.subheading }}
+        <p class="resume-subheading">
+          {{ .Params.subheading }}
+        </p>
+      {{ end }}
+      {{ if (.Params.duration) or (.Params.location) }}
+        <div>
+          {{ if .Params.duration }}
+            <p class="resume-info">
+              {{ .Params.duration }}
+            </p>
+          {{ end }}
+          {{ if .Params.location }}
+            <p class="resume-info">
+              {{ .Params.location }}
+            </p>
+          {{ end }}
+        </div>
+      {{ end }}
+      {{ .Content }}
+    </div>
+  </div>
 </div>

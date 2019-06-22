@@ -1,10 +1,14 @@
 ---
 type: "Work Experience"
-icon: ""
-heading: "Bizreach"
-subheading: "Junior Product Designer"
-duration: "October 2013 – September 2014 (1 year)"
-location: "Tokyo, Japan"
+icon: "laptop-code"
+heading: "Self-Employed (Freelance)"
+subheading: "Software Engineer / Team Lead"
+duration: "July 2012 – May 2013"
 ---
 
-<a href="https://www.bizreach.jp/" target="_blank">BizReach</a> is Japan's top job site exclusive to business executives. I worked on front-end design and coding. My most recent project was <a href="https://woman.bizreach.jp/" target="_blank">Bizreach Woman</a>, a job site specifically for female business executives in Japan.
+Projects below belong to their associated clients on [Elance](http://upwork.com/) and [vWorker](http://freelancer.com/). Thus, I have no access to any of their sources.
+
+* ClipArt Collection plugin for MS Office.
+* A paramutual betting system.
+* Numerical analysis applications.
+* Aion game server analysis application.

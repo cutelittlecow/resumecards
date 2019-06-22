@@ -1,40 +1,35 @@
-{{ if .Site.Data.social.twitter }}
-    <p>
-        <i class="fa fa-twitter fa-lg fa-fw"></i> 
-        <a href="https://twitter.com/{{ .Site.Data.social.twitter }}" target="_blank">
-            @{{- .Site.Data.social.twitter -}}
-        </a>
-    </p>
+{{ with .Site.Data.social.github }}
+  <p>
+    <i class="fab fa-github fa-lg fa-fw"></i> 
+    <a href="https://github.com/{{ . }}" target="_blank"><i class="fas fa-at"></i>{{ . }}</a>
+  </p>
 {{ end }}
-{{ if .Site.Data.social.github }}
-    <p>
-        <i class="fa fa-github fa-lg fa-fw"></i> 
-        <a href="https://github.com/{{ .Site.Data.social.github }}" target="_blank">
-            @{{- .Site.Data.social.github -}}
-        </a>
-    </p>
+{{ with .Site.Data.social.linkedin }}
+  <p>
+    <i class="fab fa-linkedin-in fa-lg fa-fw"></i> 
+    <a href="https://www.linkedin.com/in/{{ . }}" target="_blank">linkedin.com/in/{{ . }}</a>
+  </p>
+{{ end -}}
+{{ with .Site.Data.social.website }}
+  <p>
+    <i class="fas fa-globe-americas fa-lg fa-fw"></i> 
+    <a href="{{ . }}" target="_blank">{{ strings.TrimLeft "https://" . }}</a>
+  </p>
 {{ end }}
-{{ if .Site.Data.social.linkedin }}
-    <p>
-        <i class="fa fa-linkedin fa-lg fa-fw"></i> 
-        <a href="https://www.linkedin.com/in/{{ .Site.Data.social.linkedin }}" target="_blank">
-            linkedin.com/in/{{- .Site.Data.social.linkedin -}}
-        </a>
-    </p>
+{{ with .Site.Data.social.email }}
+  <p>
+    <i class="fas fa-mail-bulk fa-lg fa-fw"></i> 
+    <a href="mailto:{{ . }}" target="_blank">
+      {{ $email := (split . "@")}}
+      <!-- Dumb way of splitting the email without using javascript -->
+      {{ range first 1 $email }}{{ . }}{{ end -}}
+      <i class="fas fa-at"></i>
+      {{- range last 1 $email }}{{ . }}{{ end }}
+    </a>
+  </p>
 {{ end }}
-{{ if .Site.Data.social.website }}
-    <p>
-        <i class="fa fa-laptop fa-lg fa-fw"></i> 
-        <a href="{{ .Site.Data.social.website }}" target="_blank">
-            {{- trim .Site.Data.social.website "https://" -}}
-        </a>
-    </p>
-{{ end }}
-{{ if .Site.Data.social.email }}
-    <p>
-        <i class="fa fa-envelope-o fa-lg fa-fw"></i> 
-        <a href="mailto:{{ .Site.Data.social.email }}" target="_blank">
-            {{- .Site.Data.social.email -}}
-        </a>
-    </p>
+{{ with .Site.Data.social.phone }}
+  <p>
+    <i class="fas fa-mobile-alt fa-lg fa-fw"></i>{{ . }}
+  </p>
 {{ end }}

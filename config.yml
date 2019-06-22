@@ -1,6 +1,21 @@
----
-baseURL: "/resumecards/" # The subpath of your site. Use "" if you're hosting a blog at the root level.
+baseURL: "" # The subpath of your site. Use "" if you're hosting a blog at the root level.
 title: "ResumeCards, a Markdown based resume generator."
+
+# Twitter Params
+params:
+  alias: "sammynilla"
+  description: "Your test description for twitter cards."
+  images:
+    #- image.jpg
+  
+enableAnalytics: false
+googleAnalytics: UA-36051690-8
+
+disableKinds:
+  - taxonomy
+  - taxonomyTerm
+  - sitemap
+  - RSS
 
 ignoreFiles:
   - "README.md"

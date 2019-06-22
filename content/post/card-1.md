@@ -1,10 +1,10 @@
 ---
 type: "Work Experience"
-icon: ""
-heading: "Actcat"
-subheading: "Product Designer"
-duration: "September 2016 – Present"
-location: "Coquitlam, Canada"
+icon: "laptop-code"
+heading: "Self-Employed (Freelance)"
+subheading: "Full Stack Developer"
+duration: "April 2016 – Present"
 ---
 
-<a href="http://www.actcat.co.jp/" target="_blank">Actcat</a> is making a code reviewing service called <a href="https://sideci.com/" target="_blank">SideCI</a>, and supporting engineers to write clean and maintainable code. I'm currently working as a product designer, and work full-time from my place in Canada.
+* [Trendz: Salon &amp; Color Bar](http://trendzscb.com/)
+* Baba's Workshop

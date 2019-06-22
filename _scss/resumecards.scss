@@ -148,7 +148,6 @@ footer {
 /* Heading */
 
 h1, h2, h3, h4, h5, h6,
-.panel-title,
 .resume-contact {
   color: $color-base;
 
@@ -182,6 +181,7 @@ ul {
 }
 
 pre {
+  border-radius: 0;
   margin: $space-md 0;
 }
 
@@ -206,19 +206,19 @@ a {
 /* Panel */
 
 .panel {
-  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  box-shadow: 5px 5px 0px rgba(0,0,0,.075);
+  border-radius: 0;
 }
 
-.panel-default {
-  border: none;
-}
-
-.panel-default > .panel-heading {
+.panel-heading {
+  color: $color-base;
   background-color: $color-heading;
   border: none;
+  border-radius: 0;
 
   @each $color-name in $color-list {
     .theme-#{$color-name} & {
+      color: map-get(map-get($all-colors, $color-name), "base");
       background-color: map-get(map-get($all-colors, $color-name), "heading");
     }
   }
@@ -227,6 +227,12 @@ a {
 .panel-heading {
   height: 35px;
   overflow: hidden;
+
+  i {
+    position: absolute;
+    top: 12px;
+    left: 18px;
+  }
 }
 
 .panel-title {
@@ -241,14 +247,28 @@ a {
 }
 
 .panel-body {
-  height: 280px;
+  height: 300px;
   overflow: hidden;
+
+  > table {
+    width: 100%;
+    margin-bottom: $space-xs;
+    border: 2px solid transparent;
+    background-color: $theme-bg;
+
+    @each $color-name in $color-list {
+      .theme-#{$color-name} & {
+        background-color: map-get(map-get($all-colors, $color-name), "bg");
+      }
+    }
+  }
 }
 
 /* Navbar */
 
 .navbar-default {
   background-color: #FFF;
+  border-radius: 0;
 }
 
 .navbar {
@@ -259,6 +279,7 @@ a {
 
 .btn {
   font-size: $font-size-base;
+  border-radius: 0;
 }
 
 .btn-primary {
@@ -286,6 +307,7 @@ a {
   }
 
   img {
+    border-radius: 0;
     border: 1px solid $color-sub;
 
     @each $color-name in $color-list {
@@ -343,15 +365,8 @@ a {
 
 .resume-intro-subtitle {
   margin-top: $space-lg;
+  margin-bottom: $space-lg + 10;
   font-size: $font-size-base + 4;
-}
-
-.resume-intro-btns {
-  margin-top: $space-lg;
-
-  p:last-child {
-    margin-top: $space-lg;
-  }
 }
 
 /* Resume Explanations */
@@ -390,6 +405,10 @@ script + p {
   margin: 0 $space-xs 0 $space-sm;
 }
 
+.resume-dropdown-menu {
+  border-radius: 0;
+}
+
 .resume-content {
   padding-top: $space-md * 2;
   padding-bottom: $space-md;
@@ -401,16 +420,12 @@ script + p {
 
 .resume-pic {
   float: left;
-  img {
-    border: 1px solid $color-sub;
-  }
 
-  @each $color-name in $color-list {
-    .theme-#{$color-name} & {
-      img {
-        border: 1px solid map-get(map-get($all-colors, $color-name), "sub");
-      }
-    }
+  img {
+    border: 1px solid white;
+    box-shadow: 5px 5px 0px rgba(0,0,0,.075);
+    width: 120px;
+    height: 120px;
   }
 
   + .resume-baseinfo {
@@ -475,12 +490,6 @@ script + p {
   text-align: center;
 }
 
-@media (max-width: $screen-sm-max) and (min-width: $screen-sm-min) {
-  .panel-body {
-    height: 320px;
-  }
-}
-
 @media (max-width: $screen-xs-max) {
   .panel-body {
     height: auto;
@@ -501,7 +510,7 @@ script + p {
 }
 
 @media print {
-  @include make-grid(sm);
+  @include make-grid(md);
 
   @page {
     size: US-Letter;
@@ -518,11 +527,7 @@ script + p {
 
   .resume-pic {
     float: left;
-
-    img {
-      width: 120px;
-      height: 120px;
-    }
+    padding-left: 1px;
 
     + .resume-baseinfo {
       margin-left: 140px;
@@ -530,16 +535,10 @@ script + p {
   }
 
   .panel {
-    box-shadow: none;
     border: 1px solid #eee;
   }
 
-  .panel-heading {
-    height: 35px;
-    overflow: hidden;
-  }
-
   .panel-body {
-    height: 280px;
+    height: 300px;
   }
 }

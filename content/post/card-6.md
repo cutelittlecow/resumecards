@@ -1,13 +1,23 @@
 ---
-type: "Giving Back"
-icon: ""
-heading: ""
-subheading: ""
-duration: ""
-location: ""
+type: "Skills and Technologies"
+icon: "cubes"
 ---
 
-* I'm a mentor at <a href="http://ladieslearningcode.com/" target="_blank">Ladies Learning Code</a>. I teach HTML/CSS to beginning women developers.
-* I spoke at  Code&Coffee, a local coding meetup. The video/slides can be <a href="https://medium.com/@ellekasai/how-to-market-micro-open-source-projects-703f03c71061" target="_blank">found here</a>.
-* I was an organizer and a speaker at <a href="https://www.youtube.com/watch?v=J_vGbXDAvmQ" target="_blank">Women Who Code Tokyo</a>.
-* I like posting videos on <a href="https://www.youtube.com/channel/UCedPJBdXlrsJMAvV1TEwMFQ" target="_blank">YouTube</a> to share my experience and knowledge.
+| __Languages__ |
+|:-:|
+| |
+* __General__: C/++, C#, VB6/.NET, Python
+* __Web__: Javascript, SASS, Markdown
+
+| __Web Development__ |
+|:-:|
+| |
+* __Frameworks__: Express, Bootstrap
+* __Templates__: Pug, Handlebars
+* __Tools__: Hugo, Gulp
+
+| __Software__ |
+|:-:|
+| |
+* __Coding__: VSCode, GitKraken
+* __Graphics__: Photoshop &amp; Illustrator

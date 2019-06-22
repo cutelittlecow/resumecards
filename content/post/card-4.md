@@ -1,10 +1,13 @@
 ---
 type: "Work Experience"
-icon: ""
-heading: "Schoo"
-subheading: "HTML/CSS Lecturer"
-duration: "March 2014 – April 2014 (2 months)"
-location: "Tokyo, Japan"
+icon: "laptop-code"
+heading: "Zone Laser Tag"
+subheading: "Intern, Software Development"
+duration: "May 2011 – July 2011"
 ---
 
-Schoo is Japan's leading online learning platform. I designed and taught a bi-weekly class on HTML/CSS. On every lecture, I did <a href="https://schoo.jp/teacher/336" target="_blank">live coding</a> and there were ~500 live viewers.
+Summer Intern for the team located in Dover, Delaware. Assisted in development of Python-based software applications to interface with the following products:
+
+* Fog machines
+* Laser trip wires 
+* Sign up stand w/ scoreboard

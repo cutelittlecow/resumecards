@@ -1,15 +1,11 @@
 ---
-type: "Open Source"
-icon: ""
-heading: ""
-subheading: ""
-duration: ""
-location: ""
+type: "Education"
+icon: "graduation-cap"
+heading: "Delaware Technical Community College"
+subheading: "AAS, Computer Information Systems"
+duration: "2009 – 2011"
 ---
 
-Here are some of my open source projects:
-
-* <a href="http://ellekasai.github.io/resumecards/" target="_blank">ResumeCards</a>: Markdown-based resume generator (560+ stars)
-* <a href="http://ellekasai.github.io/purplecoat.js/" target="_blank">Purplecoat.js</a>: Simple JS library for labeled overlays (780+ stars)
-* <a href="http://ellekasai.github.io/twemoji-awesome/" target="_blank">Twemoji Awesome</a>: Like font awesome, but for Twitter Emoji (490+ stars)
-* <a href="http://ellekasai.github.io/shiori" target="_blank">Shiori</a>: Bootstrap-based Jekyll Theme (250+ stars)
+* Studied programming, software applications, systems analysis, and mathematics.
+* Summer software development intern at [Zone Laser Tag](http://lasertag.com/).
+* Graduated cum laude.

@@ -1,10 +1,14 @@
 ---
 type: "Work Experience"
-icon: ""
-heading: "Istuary Innovation Group"
-subheading: "UI Developer/Designer"
-duration: "August 2015 – August 2016"
-location: "Vancouver, Canada"
+icon: "laptop"
+heading: "Creative Micro Designs"
+subheading: "Production Technician"
+duration: "June 2010 – July 2013"
 ---
 
-<a href="http://www.istuary.com/" target="_blank">Istuary Innovation Group</a> is Canada’s largest technology incubation platform. I was in the OPI team which makes HR systems for Istuary, and I worked on front-end design (Sketch) and coding (HTML/CSS).
+Wrote scripts to manage machine program backups on Windows and Mac using Powershell &amp; Bash.
+
+Learned how to run and visual program for the following [AOI](https://en.wikipedia.org/wiki/Automated_optical_inspection) systems:
+
+* [Nordson YESTECH - BX AOI](http://www.nordson.com/en/divisions/yestech/products/automated-optical-inspection-systems/bx-aoi)
+* [Marantz - 22XDL](http://marantz-electronics.com/desktop-aoi-systems-powerspector/)
